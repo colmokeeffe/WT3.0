@@ -3,16 +3,31 @@
     {
       "id": "8b301260-d267-11eb-a8f7-591ae1064ded",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "test",
+      "title": "Beethoven Sonatas",
+      "duration": 16,
       "songs": [
         {
-          "id": "8f12a3c0-d267-11eb-a8f7-591ae1064ded",
-          "title": "et",
-          "artist": "et",
-          "duration": 124
+          "id": "04",
+          "title": "Piano Sonata No. 3",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 5
+        },
+        {
+          "id": "05",
+          "title": "Piano Sonata No. 7",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 6
+        },
+        {
+          "id": "06",
+          "title": "Piano Sonata No. 10",
+          "artist": "Beethoven",
+          "genre": "Classical",
+          "duration": 4
         }
-      ],
-      "duration": 12
+      ]
     }
   ]
 }
