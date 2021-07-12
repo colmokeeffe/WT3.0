@@ -1,4 +1,4 @@
-Welcome to the Playlist 5
+Welcome to the Playlist 6
 =========================
 
-Version 5 of the Playlist application
+Version 6 of the Playlist application
