@@ -10,6 +10,15 @@ const playlistAnalytics = {
       }
     }
     return shortestSong;
+  },
+
+  getPlaylistDuration(playlist) {
+    let playlistDuration = 0;
+    for (let i = 0; i < playlist.songs.length; i++) {
+      let song = playlist.songs[i];
+      playlistDuration = playlistDuration + song.duration;
+    }
+    return playlistDuration;
   }
 };
 
