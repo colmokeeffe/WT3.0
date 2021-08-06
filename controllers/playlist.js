@@ -9,17 +9,14 @@ const playlist = {
   index(request, response) {
     const playlistId = request.params.id;
     logger.debug("Playlist id = ", playlistId);
-
     const playlist = playlistStore.getPlaylist(playlistId);
-    const shortestSong = playlistAnalytics.getShortestSong(playlist);
-    console.log(shortestSong);
-    const duration = playlistAnalytics.getPlaylistDuration(playlist);
-    console.log(duration);
     const viewData = {
       title: "Playlist",
-      playlist: playlistStore.getPlaylist(playlistId),
-      shortestSong: shortestSong,
-      duration: duration
+      playlist: playlist,
+      playlistSummary : {
+        shortestSong : playlistAnalytics.getShortestSong(playlist),
+        duration : playlistAnalytics.getPlaylistDuration(playlist)
+      }
     };
     response.render("playlist", viewData);
   },
