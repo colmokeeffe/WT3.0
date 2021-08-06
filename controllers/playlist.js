@@ -13,10 +13,13 @@ const playlist = {
     const playlist = playlistStore.getPlaylist(playlistId);
     const shortestSong = playlistAnalytics.getShortestSong(playlist);
     console.log(shortestSong);
+    const duration = playlistAnalytics.getPlaylistDuration(playlist);
+    console.log(duration);
     const viewData = {
       title: "Playlist",
       playlist: playlistStore.getPlaylist(playlistId),
-      shortestSong: shortestSong
+      shortestSong: shortestSong,
+      duration: duration
     };
     response.render("playlist", viewData);
   },
