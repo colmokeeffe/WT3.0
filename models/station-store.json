@@ -48,38 +48,6 @@
       "kmhToBeaufort": 10,
       "feelsLike": "-9.19",
       "temperatureTrend": ""
-    },
-    {
-      "id": "47849510-0659-11ec-8730-d735e7155cfc",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Bray",
-      "lat": "50",
-      "lng": "50",
-      "readings": [],
-      "lastReading": {
-        "id": "55b3de70-0659-11ec-8730-d735e7155cfc",
-        "code": 3,
-        "temperature": 15,
-        "windSpeed": 50,
-        "windDirection": 200,
-        "pressure": 1000,
-        "date": "2021-08-26 11:35:30.135"
-      },
-      "codeToString": "Unable to Determine Current Weather",
-      "windToString": "South South West",
-      "codeToIcon": "red question circle icon",
-      "celsiusToFahrenheit": 59,
-      "kmhToBeaufort": 7,
-      "feelsLike": "12.3",
-      "minTemperature": 15,
-      "maxTemperature": 15,
-      "minWindSpeed": 50,
-      "maxWindSpeed": 50,
-      "minPressure": 1000,
-      "maxPressure": 1000,
-      "temperatureTrend": "",
-      "windSpeedTrend": "",
-      "pressureTrend": ""
     }
-  ]
+    ]
 }
