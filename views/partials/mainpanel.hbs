@@ -1,8 +1,60 @@
-<segment class="ui rasied segmemnt">
-  <h1 class="ui headder">
-    Title for Dashboard Panel
-  </h1>
-  <p>
-    To be replaced with content...
-  </p>
-</segment>
+<div class="ui five black cards">
+  <div class="card">
+    <div class="content"><i class="right floated large map pin icon"></i>
+          <div class="header">
+         {{station.name}} </div>
+          <div class="description">
+            <p>Latitude: {{station.lat}}</p>
+            <p>Longitude: {{station.lng}}</p>
+          </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="content"><i class="right floated large {{station.codeToIcon}}"></i>
+        <div class="header">Weather</div>
+          <div class="description">
+            <p>{{station.codeToString}} </p>
+           </div>
+        </div>
+  </div>
+
+
+  <div class="card">
+      <div class="content"><i class="right floated large temperature low icon"></i><i class="right floated large red {{station.temperatureTrend}} icon"></i>
+        <div class="header">Temperature</div>
+        <div class="description">
+          <p>{{station.lastReading.temperature}} C</p>
+          <p>{{station.celsiusToFahrenheit}} F</p>
+          <p>Min: {{station.minTemperature}} C</p>
+          <p>Max: {{station.maxTemperature}} C</p>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="card">
+      <div class="content"><i class="right floated large wind icon"></i><i class="right floated large red {{station.windSpeedTrend}} icon"></i>
+        <div class="header">Wind</div>
+        <div class="description">
+          <p>{{station.kmhToBeaufort}} bft</p>
+          <p>Wind Direction: {{station.windToString}}</p>
+          <p>Feels like: {{station.feelsLike}}</p>
+          <p>Max: {{station.maxWindSpeed}} Km/h</p>
+          <p>Min: {{station.minWindSpeed}} Km/h</p>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="card">
+      <div class="content"><i class="right floated large temperature high icon"></i><i class="right floated large red {{station.pressureTrend}} icon"></i>
+        <div class="header">Pressure</div>
+        <div class="description">
+          <p>{{station.lastReading.pressure}} hPa</p>
+          <p>Min: {{station.minPressure}} hPa</p>
+          <p>Max: {{station.maxPressure}} hPa</p>
+       </div>
+      </div>
+  </div>
+</div>

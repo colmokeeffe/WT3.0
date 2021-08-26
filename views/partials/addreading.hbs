@@ -1,0 +1,25 @@
+<form class="ui grey inverted stacked segment form" action="/station/{{station.id}}/addreading" method="POST">
+    <div class="five fields">
+        <div class="field">
+            <label>Code</label>
+            <input placeholder="Code" type="number" name="code">
+        </div>
+        <div class="field">
+            <label>Temperature</label>
+            <input placeholder="Temperature (C)" type="number" step="any" name="temperature">
+        </div>
+        <div class="field">
+            <label>Wind Speed</label>
+            <input placeholder="Wind Speed (Km/h)" type="number" step="any" name="windSpeed">
+        </div>
+        <div class="field">
+            <label>Wind Direction</label>
+            <input placeholder="Wind Direction" type="number" name="windDirection">
+        </div>
+        <div class="field">
+            <label>Pressure</label>
+            <input placeholder="Pressure (hPa)" type="number" name="pressure">
+        </div>
+    </div>
+    <button class="ui blue submit button">Submit Readings</button>
+</form>

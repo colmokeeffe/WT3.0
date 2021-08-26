@@ -1,7 +1,25 @@
 {{> menu id="dashboard"}}
+{{#each stations}}
 
-<section class="ui segment">
-  {{> listplaylists}}
-  {{> addplaylist}}
+
+     <section class="ui black segment">
+     <h2 class="ui header">
+         {{name}} Station
+       </h2>
+
+         {{> mainpanel station=this}}
+
+<div class="ui inverted divider"></div>
+        <a href="/station/{{id}}" class="ui green icon button">
+        <i class="icon folder open"></i>
+        </a>
+        <a href="/dashboard/deletestation/{{id}}" class="ui red icon button">
+        <i class="icon trash"></i>
+        </a>
+
+    </section>
+        {{/each}}
+
+  {{> addstation}}
 </section>
-
+<div class="ui inverted divider"></div>

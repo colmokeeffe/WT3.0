@@ -1,12 +1,25 @@
-<nav class="ui menu">
-  <header class="ui header item"> <a href="/"> Playlist 6 </a></header>
+<nav class="ui inverted menu">
+  <header class="ui inverted large header item"> WeatherTop 2.0</header>
+  <div class="borderless header item">
+    WeatherTop Stations App
+  </div>
   <div class="right menu">
+
     <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
     <a id="about" class="item" href="/about"> About </a>
-    <a id="logout" class="item" href="/logout"> Logout </a>
+
+    <div class="ui inverted simple dropdown item">
+      <i class="user icon"></i>
+      <div class="menu">
+        <div class="item"><a href="/editprofile" style="color:white">Edit Profile </a></div>
+        <div class="item"> <a href="/logout" style="color:white">Logout </a></div>
+      </div>
+    </div>
+
   </div>
+
 </nav>
 
 <script>
-  $("#{{id}}").addClass("active item");
+  $("#${_id}").addClass("active item");
 </script>

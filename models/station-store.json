@@ -1,0 +1,85 @@
+{
+  "stationCollection": [
+    {
+      "id": "b10348d0-038c-11ec-9bb3-ad1a7001d03e",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dundalk",
+      "lat": "1",
+      "lng": "1",
+      "readings": [
+        {
+          "id": "3b03f560-0451-11ec-acad-1dfd2b1778a8",
+          "code": 100,
+          "temperature": 1,
+          "windSpeed": 100,
+          "windDirection": 230,
+          "pressure": 3000,
+          "date": "2021-08-23 21:32:27.062"
+        }
+      ],
+      "lastReading": {
+        "id": "3b03f560-0451-11ec-acad-1dfd2b1778a8",
+        "code": 100,
+        "temperature": 1,
+        "windSpeed": 100,
+        "windDirection": 230,
+        "pressure": 3000,
+        "date": "2021-08-23 21:32:27.062"
+      },
+      "fahrenheit": 33.8,
+      "beaufort": 10,
+      "weatherCondition": "Clear",
+      "weatherConditionIcon": "sun icon",
+      "windChill": "-9.19",
+      "minTemperature": 1,
+      "maxTemperature": 1,
+      "minWindSpeed": 100,
+      "maxWindSpeed": 100,
+      "minPressure": 3000,
+      "maxPressure": 3000,
+      "tempTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": "",
+      "windCompass": "South West"
+    },
+    {
+      "id": "258e6620-0465-11ec-ba60-55f50350159a",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Athy",
+      "lat": "2",
+      "lng": "2",
+      "readings": [],
+      "lastReading": {
+        "id": "db8518a0-059d-11ec-866c-7f2f486854f6",
+        "code": 2,
+        "temperature": 2,
+        "windSpeed": 2,
+        "windDirection": 2,
+        "pressure": 2,
+        "date": "2021-08-25 13:13:29.258"
+      },
+      "fahrenheit": 33.8,
+      "beaufort": 1,
+      "weatherCondition": "Partial Clouds",
+      "weatherConditionIcon": "cloud sun icon",
+      "windCompass": "North",
+      "windChill": "2.77",
+      "minTemperature": 2,
+      "maxTemperature": 2,
+      "minWindSpeed": 2,
+      "maxWindSpeed": 2,
+      "minPressure": 2,
+      "maxPressure": 2,
+      "tempTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": "",
+      "codeToString": "Unable to Determine Current Weather",
+      "windToString": "North",
+      "codeToIcon": "red question circle icon",
+      "celsiusToFahrenheit": 35.6,
+      "kmhToBeaufort": 1,
+      "feelsLike": "2.55",
+      "temperatureTrend": ""
+    }
+  ]
+}

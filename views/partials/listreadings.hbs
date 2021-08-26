@@ -1,0 +1,37 @@
+<table class="ui inverted fixed table">
+  <thead>
+  <tr>
+    <th>Date/Time</th>
+    <th>Weather Code</th>
+    <th>Temperature (C)</th>
+    <th>Wind Speed (Km/h)</th>
+    <th>Wind Direction</th>
+    <th>Pressure (hPa)</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each station.readings}}
+  <tr>
+  <td>
+    {{date}}
+  </td>
+  <td>
+    {{code}}
+  </td>
+  <td>
+    {{temperature}}
+  </td>
+  <td>
+    {{windSpeed}}
+  </td>
+  <td>
+    {{windDirection}}
+  </td>
+  <td>
+    {{pressure}}  <a href="/station/{{../station.id}}/deletereading/{{id}}" class="ui right floated mini red button">Delete Readings</a>
+  </td>
+  </tr>
+    {{/each}}
+
+  </tbody>
+</table>
