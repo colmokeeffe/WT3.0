@@ -1,7 +1,7 @@
 {
-  "name": "playlist-5",
+  "name": "WT2.0",
   "version": "0.0.1",
-  "description": "Playist 5 Features",
+  "description": "ICT Skills Project",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -19,7 +19,7 @@
     "winston": "^3.3.3"
   },
   "repository": {
-    "url": "https://github.com/wit-hdip-comp-sci-2021/playlist-5"
+    "url": "https://github.com/colmokeeffe/WT2.0"
   },
   "license": "MIT",
   "keywords": [
