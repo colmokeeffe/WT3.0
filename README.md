@@ -1,4 +1,4 @@
-Welcome to the Playlist 6
+Welcome to WT2.0
 =========================
 
-Version 6 of the Playlist application
+Version 3 of ICT Skills
