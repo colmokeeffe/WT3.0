@@ -20,6 +20,35 @@
     </section>
         {{/each}}
 
+<section class="ui center segment">
+
+<div id="mapid" style="width: 100%; height: 350px">
+
+#mapid { height: 200px width:300px; }
+</div>
+<script>
+
+  var mymap = L.map('mapid').setView([53.99, -6.4], 6);
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY29sbW9rZWVmZmUiLCJhIjoiY2t0YzQ1dXprMDlobjJ2bWF0ZmtsMGZraCJ9.IM8nV-GZzpbfFu0HOzuRQw', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiY29sbW9rZWVmZmUiLCJhIjoiY2t0YzQ1dXprMDlobjJ2bWF0ZmtsMGZraCJ9.IM8nV-GZzpbfFu0HOzuRQw'
+}).addTo(mymap);
+  {{#each stations}}
+  var marker = L.marker([{{this.lat}}, {{this.lng}}]).addTo(mymap);
+
+      {{/each}}
+
+
+</script>
+</section>
+
+
   {{> addstation}}
 </section>
 <div class="ui inverted divider"></div>
+
+

@@ -5,11 +5,11 @@
             <input placeholder="Code" type="number" name="code">
         </div>
         <div class="field">
-            <label>Temperature</label>
+            <label>Temperature (C)</label>
             <input placeholder="Temperature (C)" type="number" step="any" name="temperature">
         </div>
         <div class="field">
-            <label>Wind Speed</label>
+            <label>Wind Speed (Km/h)</label>
             <input placeholder="Wind Speed (Km/h)" type="number" step="any" name="windSpeed">
         </div>
         <div class="field">
@@ -17,9 +17,16 @@
             <input placeholder="Wind Direction" type="number" name="windDirection">
         </div>
         <div class="field">
-            <label>Pressure</label>
+            <label>Pressure (hPa)</label>
             <input placeholder="Pressure (hPa)" type="number" name="pressure">
         </div>
     </div>
     <button class="ui blue submit button">Submit Readings</button>
 </form>
+
+<form class="ui inverted stacked segment form" action="/station/{{station.id}}/addreport" method="POST">
+
+    <button class="fluid ui inverted green submit button" data-position="bottom center">Auto Generate Readings</button>
+</form>
+
+

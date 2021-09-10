@@ -1,53 +1,28 @@
 {
   "stationCollection": [
     {
-      "id": "b10348d0-038c-11ec-9bb3-ad1a7001d03e",
+      "id": "11a11520-11cd-11ec-bc1e-83e598faddf4",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Dundalk",
-      "lat": "1",
-      "lng": "1",
-      "readings": [
-        {
-          "id": "3b03f560-0451-11ec-acad-1dfd2b1778a8",
-          "code": 100,
-          "temperature": 1,
-          "windSpeed": 100,
-          "windDirection": 230,
-          "pressure": 3000,
-          "date": "2021-08-23 21:32:27.062"
-        }
-      ],
-      "lastReading": {
-        "id": "3b03f560-0451-11ec-acad-1dfd2b1778a8",
-        "code": 100,
-        "temperature": 1,
-        "windSpeed": 100,
-        "windDirection": 230,
-        "pressure": 3000,
-        "date": "2021-08-23 21:32:27.062"
-      },
-      "fahrenheit": 33.8,
-      "beaufort": 10,
-      "weatherCondition": "Clear",
-      "weatherConditionIcon": "sun icon",
-      "windChill": "-9.19",
-      "minTemperature": 1,
-      "maxTemperature": 1,
-      "minWindSpeed": 100,
-      "maxWindSpeed": 100,
-      "minPressure": 3000,
-      "maxPressure": 3000,
-      "tempTrend": "",
-      "windSpeedTrend": "",
-      "pressureTrend": "",
-      "windCompass": "South West",
-      "codeToString": "Clear",
-      "windToString": "South West",
-      "codeToIcon": "sun icon",
-      "celsiusToFahrenheit": 33.8,
-      "kmhToBeaufort": 10,
-      "feelsLike": "-9.19",
-      "temperatureTrend": ""
+      "name": "Bray",
+      "lat": "53.2009",
+      "lng": "-6.1111",
+      "readings": []
+    },
+    {
+      "id": "62eb3680-11ce-11ec-bc1e-83e598faddf4",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Kenmare",
+      "lat": "51.8801",
+      "lng": "-9.5835",
+      "readings": []
+    },
+    {
+      "id": "89dc15c0-11ce-11ec-bc1e-83e598faddf4",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Killybegs",
+      "lat": "54.6348",
+      "lng": "-8.4547",
+      "readings": []
     }
-    ]
+  ]
 }

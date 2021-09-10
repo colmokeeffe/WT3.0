@@ -19,7 +19,7 @@ const analytics = {
       station.codeToString = analytics.codeToString(code);
       station.windToString = analytics.windToString(windDirection);
       station.codeToIcon = analytics.codeToIcon(code);
-      station.celsiusToFahrenheit = analytics.celsiusToFahrenheit(celsius);
+      station.celsiusToFahrenheit = analytics.celsiusToFahrenheit(celsius).toPrecision(3);
       station.kmhToBeaufort = analytics.kmhToBeaufort(windSpeed);
       station.feelsLike = analytics.feelsLike(lastReading.temperature,lastReading.windSpeed).toPrecision(3);
 
@@ -39,7 +39,21 @@ const analytics = {
   },
 
   codeToString: function(code){
-    switch (code) {
+      if (code >= 200 && code <= 232) {
+        return "Thunder";
+      } else if (code >= 300 && code <= 321) {
+        return "Drizzle";
+      } else if (code >= 500 && code <= 531) {
+        return "Rain";
+      } else if (code >= 600 && code <= 622) {
+        return "Snow";
+      } else if (code >= 799 && code <= 800) {
+        return "Clear";
+      } else if (code >= 801 && code <= 804) {
+        return "Cloudy";
+      } else return "Unable to Determine Current Wind Speed";
+    },
+    /*switch (code) {
       case 100:
         return "Clear";
       case 200:
@@ -54,17 +68,31 @@ const analytics = {
         return "Rain";
       case 700:
         return "Snow";
-      case 800:
+      case 804:
         return "Thunder";
       default:
         return "Unable to Determine Current Weather";
     }
   },
+*/
 
 
-
-  codeToIcon: function(code){
-    switch (code) {
+  codeToIcon: function(code) {
+    if (code >= 200 && code <= 232) {
+      return "bolt icon";
+    } else if (code >= 300 && code <= 321) {
+      return "cloud sun rain icon";
+    } else if (code >= 500 && code <= 531) {
+      return "cloud rain icon";
+    } else if (code >= 600 && code <= 622) {
+      return "snowflake icon";
+    } else if (code >= 799 && code <= 800) {
+      return "sun icon";
+    } else if (code >= 801 && code <= 804) {
+      return "cloud icon";
+    } else return "Unable to Determine Current Wind Speed";
+  },
+   /* switch (code) {
       case 100:
         return "sun icon";
       case 200:
@@ -79,12 +107,12 @@ const analytics = {
         return "cloud rain icon";
       case 700:
         return "snowflake icon";
-      case 800:
+      case 804:
         return "bolt icon";
       default:
         return "red question circle icon";
     }
-  },
+  },*/
 
 
   celsiusToFahrenheit: function(celsius) {
