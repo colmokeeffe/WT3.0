@@ -47,7 +47,7 @@ const station = {
     response.redirect('/station/' + stationId);
   },
 
-async addreport(request, response){
+  async addreport(request, response){
 
     logger.info("rendering new report");
     const stationId = request.params.id;
@@ -79,7 +79,7 @@ async addreport(request, response){
         const date = new Date(trends[i].dt * 1000);
         console.log(date);
         report.trendLabels.push(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}` );
-    }
+      }
     }
     console.log(report);
     stationStore.addReading(stationId, report);

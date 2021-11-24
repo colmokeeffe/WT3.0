@@ -6,7 +6,197 @@
       "name": "Bray",
       "lat": "53.2009",
       "lng": "-6.1111",
-      "readings": []
+      "readings": [
+        {
+          "id": "c615ef50-1315-11ec-b491-75f4674b15fa",
+          "code": 804,
+          "temperature": 19.35,
+          "windSpeed": 2.93,
+          "pressure": 1016,
+          "windDirection": 273,
+          "date": "2021-09-11 15:34:37.638",
+          "tempTrend": [
+            17.03,
+            12.62,
+            14.22,
+            15.6,
+            15.61,
+            16.99,
+            15.82,
+            13.35
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        },
+        {
+          "id": "e7273460-4c9f-11ec-9177-8778bc9c22f7",
+          "code": 801,
+          "temperature": 5.33,
+          "windSpeed": 2.52,
+          "pressure": 1032,
+          "windDirection": 261,
+          "date": "2021-11-23 20:56:59.887",
+          "tempTrend": [
+            7.65,
+            6.69,
+            6.59,
+            8.1,
+            4.74,
+            3.61,
+            6.64,
+            10.8
+          ],
+          "trendLabels": [
+            "23/10/2021",
+            "24/10/2021",
+            "25/10/2021",
+            "26/10/2021",
+            "27/10/2021",
+            "28/10/2021",
+            "29/10/2021",
+            "30/10/2021"
+          ]
+        },
+        {
+          "id": "13d1d600-4ca0-11ec-9177-8778bc9c22f7",
+          "code": 801,
+          "temperature": 5.33,
+          "windSpeed": 2.52,
+          "pressure": 1032,
+          "windDirection": 261,
+          "date": "2021-11-23 20:58:14.487",
+          "tempTrend": [
+            7.65,
+            6.69,
+            6.59,
+            8.1,
+            4.74,
+            3.61,
+            6.64,
+            10.8
+          ],
+          "trendLabels": [
+            "23/10/2021",
+            "24/10/2021",
+            "25/10/2021",
+            "26/10/2021",
+            "27/10/2021",
+            "28/10/2021",
+            "29/10/2021",
+            "30/10/2021"
+          ]
+        },
+        {
+          "id": "1b6b06c0-4ca0-11ec-9177-8778bc9c22f7",
+          "code": 801,
+          "temperature": 5.33,
+          "windSpeed": 2.52,
+          "pressure": 1032,
+          "windDirection": 261,
+          "date": "2021-11-23 20:58:27.170",
+          "tempTrend": [
+            7.65,
+            6.69,
+            6.59,
+            8.1,
+            4.74,
+            3.61,
+            6.64,
+            10.8
+          ],
+          "trendLabels": [
+            "23/10/2021",
+            "24/10/2021",
+            "25/10/2021",
+            "26/10/2021",
+            "27/10/2021",
+            "28/10/2021",
+            "29/10/2021",
+            "30/10/2021"
+          ]
+        },
+        {
+          "id": "2270f830-4ca0-11ec-9177-8778bc9c22f7",
+          "code": 801,
+          "temperature": 5.33,
+          "windSpeed": 2.52,
+          "pressure": 1032,
+          "windDirection": 261,
+          "date": "2021-11-23 20:58:38.874",
+          "tempTrend": [
+            7.65,
+            6.69,
+            6.59,
+            8.1,
+            4.74,
+            3.61,
+            6.64,
+            10.8
+          ],
+          "trendLabels": [
+            "23/10/2021",
+            "24/10/2021",
+            "25/10/2021",
+            "26/10/2021",
+            "27/10/2021",
+            "28/10/2021",
+            "29/10/2021",
+            "30/10/2021"
+          ]
+        }
+      ],
+      "lastReading": {
+        "id": "2270f830-4ca0-11ec-9177-8778bc9c22f7",
+        "code": 801,
+        "temperature": 5.33,
+        "windSpeed": 2.52,
+        "pressure": 1032,
+        "windDirection": 261,
+        "date": "2021-11-23 20:58:38.874",
+        "tempTrend": [
+          7.65,
+          6.69,
+          6.59,
+          8.1,
+          4.74,
+          3.61,
+          6.64,
+          10.8
+        ],
+        "trendLabels": [
+          "23/10/2021",
+          "24/10/2021",
+          "25/10/2021",
+          "26/10/2021",
+          "27/10/2021",
+          "28/10/2021",
+          "29/10/2021",
+          "30/10/2021"
+        ]
+      },
+      "codeToString": "Cloudy",
+      "windToString": "West",
+      "codeToIcon": "cloud icon",
+      "celsiusToFahrenheit": "41.6",
+      "kmhToBeaufort": 1,
+      "feelsLike": "5.70",
+      "minTemperature": 1,
+      "maxTemperature": 19.35,
+      "minWindSpeed": 2.52,
+      "maxWindSpeed": 4,
+      "minPressure": 1016,
+      "maxPressure": 4444,
+      "temperatureTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": ""
     },
     {
       "id": "62eb3680-11ce-11ec-bc1e-83e598faddf4",
@@ -14,7 +204,81 @@
       "name": "Kenmare",
       "lat": "51.8801",
       "lng": "-9.5835",
-      "readings": []
+      "readings": [
+        {
+          "id": "cccf2050-1315-11ec-b491-75f4674b15fa",
+          "code": 804,
+          "temperature": 16.12,
+          "windSpeed": 1.45,
+          "pressure": 1018,
+          "windDirection": 316,
+          "date": "2021-09-11 15:34:48.888",
+          "tempTrend": [
+            17.62,
+            16.7,
+            14.71,
+            18.9,
+            18.43,
+            18.88,
+            17.57,
+            17.47
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        }
+      ],
+      "lastReading": {
+        "id": "cccf2050-1315-11ec-b491-75f4674b15fa",
+        "code": 804,
+        "temperature": 16.12,
+        "windSpeed": 1.45,
+        "pressure": 1018,
+        "windDirection": 316,
+        "date": "2021-09-11 15:34:48.888",
+        "tempTrend": [
+          17.62,
+          16.7,
+          14.71,
+          18.9,
+          18.43,
+          18.88,
+          17.57,
+          17.47
+        ],
+        "trendLabels": [
+          "11/8/2021",
+          "12/8/2021",
+          "13/8/2021",
+          "14/8/2021",
+          "15/8/2021",
+          "16/8/2021",
+          "17/8/2021",
+          "18/8/2021"
+        ]
+      },
+      "codeToString": "Cloudy",
+      "windToString": "North West",
+      "codeToIcon": "cloud icon",
+      "celsiusToFahrenheit": "61.0",
+      "kmhToBeaufort": 1,
+      "feelsLike": "17.9",
+      "minTemperature": 16.12,
+      "maxTemperature": 16.12,
+      "minWindSpeed": 1.45,
+      "maxWindSpeed": 1.45,
+      "minPressure": 1018,
+      "maxPressure": 1018,
+      "temperatureTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": ""
     },
     {
       "id": "89dc15c0-11ce-11ec-bc1e-83e598faddf4",
@@ -22,7 +286,239 @@
       "name": "Killybegs",
       "lat": "54.6348",
       "lng": "-8.4547",
-      "readings": []
+      "readings": [
+        {
+          "id": "d3ed54b0-1315-11ec-b491-75f4674b15fa",
+          "code": 804,
+          "temperature": 15.08,
+          "windSpeed": 4.29,
+          "pressure": 1017,
+          "windDirection": 321,
+          "date": "2021-09-11 15:35:00.908",
+          "tempTrend": [
+            15.14,
+            14.58,
+            15.53,
+            15.27,
+            15.03,
+            16.58,
+            15.05,
+            14.61
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        },
+        {
+          "id": "132530b0-1318-11ec-b491-75f4674b15fa",
+          "code": 804,
+          "temperature": 16.6,
+          "windSpeed": 4.29,
+          "pressure": 1017,
+          "windDirection": 321,
+          "date": "2021-09-11 15:51:05.805",
+          "tempTrend": [
+            15.45,
+            14.58,
+            15.53,
+            15.27,
+            15.03,
+            16.58,
+            15.05,
+            14.61
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        }
+      ],
+      "lastReading": {
+        "id": "132530b0-1318-11ec-b491-75f4674b15fa",
+        "code": 804,
+        "temperature": 16.6,
+        "windSpeed": 4.29,
+        "pressure": 1017,
+        "windDirection": 321,
+        "date": "2021-09-11 15:51:05.805",
+        "tempTrend": [
+          15.45,
+          14.58,
+          15.53,
+          15.27,
+          15.03,
+          16.58,
+          15.05,
+          14.61
+        ],
+        "trendLabels": [
+          "11/8/2021",
+          "12/8/2021",
+          "13/8/2021",
+          "14/8/2021",
+          "15/8/2021",
+          "16/8/2021",
+          "17/8/2021",
+          "18/8/2021"
+        ]
+      },
+      "codeToString": "Cloudy",
+      "windToString": "North West",
+      "codeToIcon": "cloud icon",
+      "celsiusToFahrenheit": "61.9",
+      "kmhToBeaufort": 1,
+      "feelsLike": "17.4",
+      "minTemperature": 15.08,
+      "maxTemperature": 16.6,
+      "minWindSpeed": 4.29,
+      "maxWindSpeed": 4.29,
+      "minPressure": 1017,
+      "maxPressure": 1017,
+      "temperatureTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": ""
+    },
+    {
+      "id": "c1959680-1345-11ec-8152-ef6ce5243e40",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Waterford",
+      "lat": "52.25",
+      "lng": "-7.11",
+      "readings": [
+        {
+          "id": "d563ee50-1345-11ec-8152-ef6ce5243e40",
+          "code": 804,
+          "temperature": 15.25,
+          "windSpeed": 2.24,
+          "pressure": 1019,
+          "windDirection": 293,
+          "date": "2021-09-11 21:18:39.203",
+          "tempTrend": [
+            17.18,
+            12.12,
+            15,
+            15.9,
+            19.05,
+            17.73,
+            17.17,
+            16.59
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        },
+        {
+          "id": "fb698330-1345-11ec-8152-ef6ce5243e40",
+          "code": 0,
+          "temperature": 10,
+          "windSpeed": 0,
+          "windDirection": 0,
+          "pressure": 0,
+          "date": "2021-09-11 21:19:43.331"
+        },
+        {
+          "id": "fe2261a0-1345-11ec-8152-ef6ce5243e40",
+          "code": 0,
+          "temperature": 5,
+          "windSpeed": 0,
+          "windDirection": 0,
+          "pressure": 0,
+          "date": "2021-09-11 21:19:47.898"
+        },
+        {
+          "id": "06241830-1346-11ec-8152-ef6ce5243e40",
+          "code": 804,
+          "temperature": 15.25,
+          "windSpeed": 2.24,
+          "pressure": 1019,
+          "windDirection": 293,
+          "date": "2021-09-11 21:20:01.015",
+          "tempTrend": [
+            17.18,
+            12.12,
+            15,
+            15.9,
+            19.05,
+            17.73,
+            17.17,
+            16.59
+          ],
+          "trendLabels": [
+            "11/8/2021",
+            "12/8/2021",
+            "13/8/2021",
+            "14/8/2021",
+            "15/8/2021",
+            "16/8/2021",
+            "17/8/2021",
+            "18/8/2021"
+          ]
+        }
+      ],
+      "lastReading": {
+        "id": "06241830-1346-11ec-8152-ef6ce5243e40",
+        "code": 804,
+        "temperature": 15.25,
+        "windSpeed": 2.24,
+        "pressure": 1019,
+        "windDirection": 293,
+        "date": "2021-09-11 21:20:01.015",
+        "tempTrend": [
+          17.18,
+          12.12,
+          15,
+          15.9,
+          19.05,
+          17.73,
+          17.17,
+          16.59
+        ],
+        "trendLabels": [
+          "11/8/2021",
+          "12/8/2021",
+          "13/8/2021",
+          "14/8/2021",
+          "15/8/2021",
+          "16/8/2021",
+          "17/8/2021",
+          "18/8/2021"
+        ]
+      },
+      "codeToString": "Cloudy",
+      "windToString": "West North West",
+      "codeToIcon": "cloud icon",
+      "celsiusToFahrenheit": "59.5",
+      "kmhToBeaufort": 1,
+      "feelsLike": "16.5",
+      "minTemperature": 5,
+      "maxTemperature": 15.25,
+      "minWindSpeed": 0,
+      "maxWindSpeed": 2.24,
+      "minPressure": 0,
+      "maxPressure": 1019,
+      "temperatureTrend": "",
+      "windSpeedTrend": "",
+      "pressureTrend": ""
     }
   ]
 }

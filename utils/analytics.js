@@ -39,41 +39,41 @@ const analytics = {
   },
 
   codeToString: function(code){
-      if (code >= 200 && code <= 232) {
-        return "Thunder";
-      } else if (code >= 300 && code <= 321) {
-        return "Drizzle";
-      } else if (code >= 500 && code <= 531) {
-        return "Rain";
-      } else if (code >= 600 && code <= 622) {
-        return "Snow";
-      } else if (code >= 799 && code <= 800) {
-        return "Clear";
-      } else if (code >= 801 && code <= 804) {
-        return "Cloudy";
-      } else return "Unable to Determine Current Wind Speed";
-    },
-    /*switch (code) {
-      case 100:
-        return "Clear";
-      case 200:
-        return "Partial Clouds";
-      case 300:
-        return "Cloudy";
-      case 400:
-        return "Light Showers";
-      case 500:
-        return "Heavy Showers";
-      case 600:
-        return "Rain";
-      case 700:
-        return "Snow";
-      case 804:
-        return "Thunder";
-      default:
-        return "Unable to Determine Current Weather";
-    }
+    if (code >= 200 && code <= 232) {
+      return "Thunder";
+    } else if (code >= 300 && code <= 321) {
+      return "Drizzle";
+    } else if (code >= 500 && code <= 531) {
+      return "Rain";
+    } else if (code >= 600 && code <= 622) {
+      return "Snow";
+    } else if (code >= 799 && code <= 800) {
+      return "Clear";
+    } else if (code >= 801 && code <= 804) {
+      return "Cloudy";
+    } else return "Unable to Determine Current Wind Speed";
   },
+  /*switch (code) {
+    case 100:
+      return "Clear";
+    case 200:
+      return "Partial Clouds";
+    case 300:
+      return "Cloudy";
+    case 400:
+      return "Light Showers";
+    case 500:
+      return "Heavy Showers";
+    case 600:
+      return "Rain";
+    case 700:
+      return "Snow";
+    case 804:
+      return "Thunder";
+    default:
+      return "Unable to Determine Current Weather";
+  }
+},
 */
 
 
@@ -92,27 +92,27 @@ const analytics = {
       return "cloud icon";
     } else return "Unable to Determine Current Wind Speed";
   },
-   /* switch (code) {
-      case 100:
-        return "sun icon";
-      case 200:
-        return "cloud sun icon";
-      case 300:
-        return "cloud icon";
-      case 400:
-        return "cloud sun rain icon";
-      case 500:
-        return "cloud showers heavy icon";
-      case 600:
-        return "cloud rain icon";
-      case 700:
-        return "snowflake icon";
-      case 804:
-        return "bolt icon";
-      default:
-        return "red question circle icon";
-    }
-  },*/
+  /* switch (code) {
+     case 100:
+       return "sun icon";
+     case 200:
+       return "cloud sun icon";
+     case 300:
+       return "cloud icon";
+     case 400:
+       return "cloud sun rain icon";
+     case 500:
+       return "cloud showers heavy icon";
+     case 600:
+       return "cloud rain icon";
+     case 700:
+       return "snowflake icon";
+     case 804:
+       return "bolt icon";
+     default:
+       return "red question circle icon";
+   }
+ },*/
 
 
   celsiusToFahrenheit: function(celsius) {
@@ -228,7 +228,7 @@ const analytics = {
         }
       }
     }
-   return max;
+    return max;
   },
 
 
@@ -242,7 +242,7 @@ const analytics = {
         }
       }
     }
-     return min;
+    return min;
   },
 
 
@@ -257,7 +257,7 @@ const analytics = {
         }
       }
     }
-     return max;
+    return max;
   },
 
 
@@ -271,7 +271,7 @@ const analytics = {
         }
       }
     }
-     return min;
+    return min;
   },
 
 
@@ -305,7 +305,7 @@ const analytics = {
         trend = "arrow down";
       }
     }
-     return trend;
+    return trend;
   },
 
   pressureTrend: function(readings) {
@@ -321,7 +321,7 @@ const analytics = {
         trend = "arrow down";
       }
     }
-     return trend;
+    return trend;
   },
 
 }

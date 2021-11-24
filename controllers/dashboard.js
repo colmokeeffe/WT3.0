@@ -32,19 +32,19 @@ const dashboard = {
     response.redirect("/dashboard");
   },
 
-    addStation(request, response) {
-      const loggedInUser = accounts.getCurrentUser(request);
-      const newStation = {
-        id: uuid.v1(),
-        userid: loggedInUser.id,
-        name: request.body.name,
-        lat: request.body.lat,
-        lng: request.body.lng,
-        readings: [],
+  addStation(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newStation = {
+      id: uuid.v1(),
+      userid: loggedInUser.id,
+      name: request.body.name,
+      lat: request.body.lat,
+      lng: request.body.lng,
+      readings: [],
     };
     logger.debug("Creating a new Station", newStation);
-      stationStore.addStation(newStation);
-      response.redirect('/dashboard');
+    stationStore.addStation(newStation);
+    response.redirect('/dashboard');
   }
 };
 

@@ -44,7 +44,7 @@ const accounts = {
     if (user) {
       response.cookie("station", user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect("/dashboard");
+      response.redirect("/about");
     } else {
       response.redirect("/login");
     }
@@ -67,7 +67,7 @@ const accounts = {
     user.email = request.body.email;
     user.password = request.body.password;
     userstore.saveStore();
-    response.render('dashboard');
+    response.render('about');
   },
 };
 
