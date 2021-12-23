@@ -7,21 +7,6 @@
       "password": "password",
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "_locals": {}
-    },
-    {
-      "firstname": "marge",
-      "lastname": "simpson",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
-      "firstname": "colm",
-      "lastname": "colm",
-      "email": "colm",
-      "password": "password",
-      "id": "dae18220-ffa9-11eb-a5d3-5797a2aedac2",
-      "_locals": {}
     }
   ]
 }

@@ -6,34 +6,88 @@
   </h2>
 </section>
 
-<div class="ui segment" id="chart"></div>
+<section class="ui middle aligned segment">
+<div class="ui segment" id="chart">
 <script>
-  const data = {
+   const data = {
       labels: [
-        {{#each station.lastReading.trendLabels}}
+        {{#each station.trendLabels}}
           "{{this}}",
         {{/each}}
       ],
+
       datasets: [
         {
           name: "Temperature", type: "line",
           values: [
-            {{#each station.lastReading.tempTrend}}
+            {{#each station.temperatureTrend}}
+              {{this}},
+            {{/each}}
+          ]
+        },
+
+        {
+          name: "Wind Speed", type: "line",
+          values: [
+            {{#each station.windTrend}}
               {{this}},
             {{/each}}
           ]
         }
-      ]
+      ],
     }
     const chart = new frappe.Chart("#chart", {
-        title: "Temperature Trend",
-        data: data,
-        type: 'line',
-        height: 250,
-        colors: ["red"],
-      })
-    </script>
+      title: "Temperature & Wind Speed Trend (Source: OpenWeather)",
+      data: data,
+      type: 'line',
+      height: 350,
+      colors: ["red", "black"],
+    })
+</script>
+</div>
+</section>
+
+<section class="ui middle aligned segment">
+<div class="ui segment" id="chart1">
+<script>
+   const data1 = {
+      labels: [
+        {{#each station.trendLabels}}
+          "{{this}}",
+        {{/each}}
+      ],
+
+      datasets: [
+        {
+          name: "Pressure", type: "line",
+          values: [
+            {{#each station.pressTrend}}
+              {{this}},
+            {{/each}}
+          ]
+        }
+      ],
+    }
+    const chart1 = new frappe.Chart("#chart1", {
+      title: "Pressure Trend (Source: OpenWeather)",
+      data: data1,
+      type: 'line',
+      height: 200,
+      colors: ["red"],
+    })
+</script>
+</div>
+</section>
+
 
 {{> listreadings}}
 {{> addreading}}
 
+<h3 class="ui horizontal divider header">
+  Contact
+</h3>
+<h4 class="ui center aligned header">Visit us at WeatherTop.com for more information<br> or <br>Contact WeatherTop@Gmail.com</h4>
+
+  <div class="ui vertical segment">
+    <img class="ui circular centered medium image" src="/images/logo.jpg">
+  </div>

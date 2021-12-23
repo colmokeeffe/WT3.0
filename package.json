@@ -1,7 +1,7 @@
 {
-  "name": "WT2.0",
+  "name": "WT3.0",
   "version": "0.0.1",
-  "description": "ICT Skills Project",
+  "description": "HDip Computer Science",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -1,4 +1,3 @@
-Welcome to WT2.0
+Welcome to WT3.0
 =========================
 
-Version 5 (Release 4) of ICT Skills

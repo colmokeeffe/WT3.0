@@ -19,6 +19,25 @@ const station = {
     const currentDate = new Date();
     const timestamp = new Date(currentDate.getTime() - (currentDate.getTimezoneOffset() * 60000)).toISOString().replace ('T', ' ').replace('Z', '');
 
+    const oneCallRequest = `https://api.openweathermap.org/data/2.5/onecall?lat=${station.lat}&lon=${station.lng}&units=metric&appid=7d57e4942506d7b5b48e58d69cfaae52`;
+    const result = await axios.get(oneCallRequest);
+    if (result.status == 200) {
+      station.temperatureTrend = [];
+      station.windTrend = [];
+      station.pressTrend = [];
+      station.trendLabels = [];
+      const trends = result.data.daily;
+      for (let i = 0; i < trends.length; i++) {
+        station.temperatureTrend.push(trends[i].temp.day);
+        station.windTrend.push(trends[i].wind_speed);
+        station.pressTrend.push(trends[i].pressure);
+        const date = new Date(trends[i].dt * 1000);
+        station.trendLabels.push(
+          `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
+        );
+      }
+    }
+
     const viewData = {
       title: 'Station',
       station: station,
@@ -34,6 +53,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const currentDate = new Date();
     const timestamp = new Date(currentDate.getTime() - (currentDate.getTimezoneOffset() * 60000)).toISOString().replace ('T', ' ').replace('Z', '');
+
     const newReading = {
       id: uuid.v1(),
       code: Number(request.body.code),
@@ -70,16 +90,18 @@ const station = {
       report.pressure = reading.pressure;
       report.windDirection = reading.wind_deg;
       report.date = timestamp;
-
       report.tempTrend = [];
+      report.windTrend = [];
       report.trendLabels = [];
       const trends = result.data.daily;
       for (let i=0; i<trends.length; i++) {
         report.tempTrend.push(trends[i].temp.day);
+
         const date = new Date(trends[i].dt * 1000);
         console.log(date);
         report.trendLabels.push(`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}` );
       }
+
     }
     console.log(report);
     stationStore.addReading(stationId, report);
