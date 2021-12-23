@@ -8,3 +8,6 @@ Temperature, humidity and pressure data is received from a configured Raspberry 
 Receiving Openweather data, via Thingspeak, to take in global weather conditions. Thingspeak configured to send weather alerts via email and Tweets.
 
 Visit https://gilded-relieved-hardcover.glitch.me 
+Member login details:
+Email:homer@simpson.com
+Password:secret
